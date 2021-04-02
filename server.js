@@ -8,7 +8,7 @@ const express = require('express'); //npm install express (So we install express
 // Make server has all express properties and method : // 2nd step
 const server = express(); // A. make a variable = express 
 
-const PORT = process.env.PORT || 3030; // B. why ? ////////////////////////////////////////asking
+const PORT = process.env.PORT || 3000; // B. why ? ////////////////////////////////////////asking
 
 
 // To access an file in public directory : // 3rd step 
@@ -19,13 +19,13 @@ server.use(express.static('./public'));
 // Localhost: 3030/ 
 server.get('/', (req,res) =>{
     res.send('home route')
-});
+})
 
 
 // Localhost:3030/test ------>http request (/test ------>Route)  // 5th step (for testing)
 server.get('/test', (request,response) =>{
     response.send('your server is a live!!')
-});
+})
 
 
 //// Just for remember :
@@ -43,13 +43,13 @@ server.get('/data',(req,res) =>{
 
         // res.send(userName)
         res.json(userName);
-});
+})
 
 
 // Make the server ready for listening : // 7th step 
-server.listen(PORT,() =>{
+server.listen (PORT,() =>{
     console.log(`listening on PORT ${PORT}`);
-});
+})
 
 
 
