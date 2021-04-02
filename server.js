@@ -8,7 +8,7 @@ const express = require('express'); //npm install express (So we install express
 // Make server has all express properties and method : // 2nd step
 const server = express(); // A. make a variable = express 
 
-const PORT = process.env.PORT || 3000; // B. why ? ////////////////////////////////////////asking
+const PORT = process.env.PORT || 3030; // B. why ? ////////////////////////////////////////asking
 
 
 // To access an file in public directory : // 3rd step 
@@ -35,15 +35,15 @@ server.get('/test', (request,response) =>{
 //// City=amman (request query parameters)
 
 
-// Localhost:3030/data ------>http request (/data ------>Route)  // 6th step (for getting data)
-server.get('/data',(req,res) =>{
-    let userName = [
-        {firstName: 'Farah'},
-        {lastName: 'Wahaibi'},
+// Localhost:3030/data ------>http request (/data ------>Route)  // 
+// server.get('/data',(req,res) =>{
+//     let userName = [
+//         {firstName: 'Farah'},
+//         {lastName: 'Wahaibi'},
 
-        // res.send(userName)
-        res.json(userName);
-})
+//         // res.send(userName)
+//         res.json(userName);
+// })
 
 
 // Make the server ready for listening : // 7th step 
