@@ -2204,22 +2204,28 @@ input, select, textarea {
 		}
 
 			#main > section.dark {
-				color: #ddd;
-				color: rgba(255, 255, 255, 0.75);
+				color:black;
+				color:black;
 			}
 
 				#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
 					color: inherit;
 				}
 
+				#main > section.dark h2{
+					font-weight: bolder;
+				}
+
 				#main > section.dark strong {
-					color: #fff;
+					color: black;
 					border-color: inherit;
+					font-weight: bolder;
 				}
 
 				#main > section.dark a {
-					color: #fff;
+					color: black;
 					border-color: inherit;
+					font-weight: bolder;
 				}
 
 					#main > section.dark a:hover {
@@ -2234,7 +2240,7 @@ input, select, textarea {
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background-image: url("../../images/14297_884550938263064_699734387915826707_n.jpg");
 			}
 
 			#main > section.two {
